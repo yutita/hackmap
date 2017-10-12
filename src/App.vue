@@ -152,6 +152,14 @@ export default {
     deleteProject (id) {
       githubIssue.deleteProject(id)
         .then(() => {
+          this.selectedProject = {
+            id: '',
+            avatar: '',
+            username: '',
+            editMode: '',
+            title: '',
+            description: ''
+          }
           const indexResult = this.projects.findIndex(project => project.id === id)
           this.projects.splice(indexResult, 1)
         })
