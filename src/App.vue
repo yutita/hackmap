@@ -172,7 +172,7 @@ export default {
   },
   mounted () {
     githubIssue = new GitHubIssueService({
-      organization: 'yutita',
+      organization: 'bkkhack',
       repository: 'hackmap',
       label: 'BKKHack Main Thread',
       onAuthenticationRequired: auth.getOAuthToken,
